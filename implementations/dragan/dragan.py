@@ -121,7 +121,7 @@ discriminator.apply(weights_init_normal)
 
 # Configure data loader
 os.makedirs("../../data/mnist", exist_ok=True)
-dataloader = torch.utils.data.DataLoader(
+mnist_loader = torch.utils.data.DataLoader(
     datasets.MNIST(
         "../../data/mnist",
         train=True,
